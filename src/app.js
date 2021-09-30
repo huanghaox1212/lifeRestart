@@ -340,10 +340,10 @@ class App{
             return {group, get, set};
         }
 
-        groups.CHR = getBtnGroups("颜值", 0, 10); // 颜值 charm CHR
-        groups.INT = getBtnGroups("智力", 0, 10); // 智力 intelligence INT
-        groups.STR = getBtnGroups("体质", 0, 10); // 体质 strength STR
-        groups.MNY = getBtnGroups("家境", 0, 10); // 家境 money MNY
+        groups.CHR = getBtnGroups("颜值", 0, 200); // 颜值 charm CHR
+        groups.INT = getBtnGroups("智力", 0, 200); // 智力 intelligence INT
+        groups.STR = getBtnGroups("体质", 0, 200); // 体质 strength STR
+        groups.MNY = getBtnGroups("家境", 0, 200); // 家境 money MNY
 
         const ul = propertyPage.find('#propertyAllocation');
 
@@ -355,9 +355,9 @@ class App{
             .find('#random')
             .click(()=>{
                 let t = this.#totalMax;
-                const arr = [10, 10, 10, 10];
+                const arr = [200, 200, 200, 200];
                 while(t>0) {
-                    const sub = Math.round(Math.random() * (Math.min(t, 10) - 1)) + 1;
+                    const sub = Math.round(Math.random() * (Math.min(t, 200) - 1)) + 1;
                     while(true) {
                         const select = Math.floor(Math.random() * 4) % 4;
                         if(arr[select] - sub <0) continue;
@@ -366,10 +366,10 @@ class App{
                         break;
                     }
                 }
-                groups.CHR.set(10 - arr[0]);
-                groups.INT.set(10 - arr[1]);
-                groups.STR.set(10 - arr[2]);
-                groups.MNY.set(10 - arr[3]);
+                groups.CHR.set(200 - arr[0]);
+                groups.INT.set(200 - arr[1]);
+                groups.STR.set(200 - arr[2]);
+                groups.MNY.set(200 - arr[3]);
             });
 
         propertyPage
