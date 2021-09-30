@@ -90,11 +90,11 @@ class Property {
         this.#data = {
             [this.TYPES.AGE]: -1,
 
-            [this.TYPES.CHR]: 0,
-            [this.TYPES.INT]: 0,
-            [this.TYPES.STR]: 0,
-            [this.TYPES.MNY]: 0,
-            [this.TYPES.SPR]: 0,
+            [this.TYPES.CHR]: Infinity,
+            [this.TYPES.INT]: Infinity,
+            [this.TYPES.STR]: Infinity,
+            [this.TYPES.MNY]: Infinity,
+            [this.TYPES.SPR]: Infinity,
 
             [this.TYPES.LIF]: 1,
 
