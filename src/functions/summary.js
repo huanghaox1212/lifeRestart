@@ -1,7 +1,7 @@
 const data = {
     "CHR": [
         {"judge": "地狱", "grade": 0},
-        {"min":1, "judge": "折磨", "grade": 0},
+        {"min":1, "judge": "逆天", "grade": 3},
         {"min":2, "judge": "不佳", "grade": 0},
         {"min":4, "judge": "普通", "grade": 0},
         {"min":7, "judge": "优秀", "grade": 1},
