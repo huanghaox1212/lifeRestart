@@ -11,7 +11,7 @@ class App{
     #pages;
     #currentPage;
     #talentSelected = new Set();
-    #totalMax=20;
+    #totalMax=200;
     #isEnd = false;
     #selectedExtendTalent = null;
     #hintTimeout;
